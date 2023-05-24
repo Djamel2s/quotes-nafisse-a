@@ -4,9 +4,9 @@ A python program that generates programming quotes and jokes.
 
 ## Contributors
 - `initiator`: DELHAYE Guillaume Group A
-- `contributor-1`: MAMOU Candice Group A
+- `contributor-1`: MASSAINI Côme Group A
 - `contributor-2`: NAFISSE Djamel Group A
-- `contributor-3`: MASSAINI Côme Group A
+- `contributor-3`: MAMOU Candice Group A
 
 ## Fork urls
 - `contributor-1`: [quotes-bar-b](url-1)

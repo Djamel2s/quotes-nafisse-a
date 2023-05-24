@@ -1,16 +1,30 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from functions import *
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def menu():
+    print("\n==== Programming Quotes ====")
+    print("1. Random quote")
+    print("2. All quotes")
+    print("3. Exit")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def main():
+    while True:
+        quotes = load_quotes("quotes.txt")
+        menu()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+        choice = input("Choose your an action (1-3): ")
+
+        if choice == "1":
+            print_quote(random_quote(quotes))
+        elif choice == "2":
+            view_quotes(quotes)
+        elif choice == "3":
+            print("Good bye...")
+            break
+        else:
+            print("Invalid input")
+
+
+if __name__ == "__main__":
+    main()
